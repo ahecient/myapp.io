@@ -1,0 +1,29 @@
+<form class = "form-parameters" ngNoForm>
+  <div class = "filter-sex">
+      <div class = "parametrs-headers">
+          <h2>Sex</h2>
+        </div>
+        <div class = "parametrs" *ngFor = "let item of Sex; let i = index">
+          <input type = "checkbox" name = "sex" [ngModel] = "Sex[i]" id = "s{{i+1}}">
+          <label for = "s{{i+1}}">{{item}}</label>
+        </div>
+  </div>
+  <div class = "filter-type">
+      <div class = "parametrs-headers">
+          <h2>Type</h2>
+        </div>
+        <div class = "parametrs" *ngFor = "let item of Type; let i = index">
+          <input type = "checkbox" name = "type" [ngModel] = "Type[i]" id = "t{{i+1}}">
+          <label for = "t{{i+1}}">{{item}}</label>
+        </div>
+  </div>
+  <div class = "filter-collection">
+      <div class = "parametrs-headers">
+          <h2>Collection</h2>
+        </div>
+        <div class = "parametrs" *ngFor = "let item of Collection; let i = index">
+          <input type = "checkbox" name = "collection" [ngModel] = "Collection[i]" id = "c{{i+1}}">
+          <label for = "c{{i+1}}">{{item}}</label>
+        </div>
+  </div>
+</form>

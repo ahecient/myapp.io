@@ -1,0 +1,29 @@
+<h1 class ="h1-price">Price</h1>
+
+<div class = "table-sewing">
+    <h1>Sewing</h1>
+    <table class = "sewing">
+      <tr class = "table-header">
+        <th>SERVICE</th>
+        <th>PRICE</th>
+      </tr>
+      <tr class = "main" *ngFor = "let s of sewing">
+        <td>{{s.service}}</td>
+        <td>{{s.price}}</td>
+      </tr>
+    </table>
+</div>
+
+<div class = "table-repair">
+    <h1>Repair</h1>
+    <table class = "repair">
+        <tr class = "table-header">
+          <th>SERVICE</th>
+          <th>PRICE</th>
+        </tr>
+        <tr class = "main" *ngFor = "let r of repair">
+          <td>{{r.service}}</td>
+          <td>{{r.price}}</td>
+        </tr>
+      </table>
+</div>

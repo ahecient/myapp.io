@@ -1,0 +1,18 @@
+@import 'extends';
+@import 'var';
+
+[class^='box-']{
+    position:relative;
+}
+
+.text{
+    @extend %text-on-img;
+    height: 40%;
+    display: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+[class^='box-']:hover .text{
+    display: block;
+}

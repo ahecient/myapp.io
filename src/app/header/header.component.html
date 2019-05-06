@@ -1,0 +1,7 @@
+<img class = "logo" src = "assets/img/logo.png"/>
+<ul class = "navigation">
+  <li *ngFor = "let m of menu"><a href = "#">{{m}}</a></li>
+</ul>
+<ul class = "social-link">
+  <li  *ngFor = "let l of links"><a href = {{l.href}}><img src = {{l.img}}/></a></li>
+</ul>

@@ -1,0 +1,55 @@
+@import "var";
+
+
+%list_horizontal {
+    list-style: none;
+    margin: 0;
+    padding-left:0;
+    li{
+        display: inline-block;
+    }
+    padding-bottom: 15px;
+}
+
+
+%grid_350_350 {
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+%grid_center_center{
+    justify-content: center;
+    align-items: center;
+}
+
+%p-gray{
+    font-size: 20px;
+    color: $light-gray;
+    text-align:center;
+}
+
+%h1-red{
+    font-size:34px;
+    color: $deep-red;
+    text-align:center;
+}
+%h1-white{
+    font-size:34px;
+    color: white;
+    text-align:center;
+}
+
+%text-on-img{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba($color: black, $alpha: 0.5)
+}
+
+%font-15-dark{
+    color: $dark-gray;
+    font-size: 15px;
+}
+
+
+

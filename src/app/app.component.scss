@@ -1,0 +1,16 @@
+@import "var";
+
+app-header{
+    background: $color-layout;
+    padding: 10px 0px 10px 0px;
+}
+
+app-order, app-price, app-contact{
+    margin-top: $margin-top-content;
+}
+
+app-footer{
+    background: $color-layout;
+    color: $deep-red;
+    font-size: 15px;
+}

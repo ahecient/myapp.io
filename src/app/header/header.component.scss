@@ -1,0 +1,30 @@
+@import "extends";
+@import "var";
+
+
+.navigation{
+    text-align: center;
+    @extend %list_horizontal;
+    li{
+        padding-right:40px;
+        a {
+            font-size: 25px;
+            color: $light-gray;
+            text-decoration: none;
+            &:hover{
+                color: $deep-red;
+            }
+        }       
+    }
+}
+
+.social-link{
+    @extend %list_horizontal;
+    li{
+        padding-right:15px;
+    }
+}
+.logo{
+    margin-left: 15px;
+    margin-bottom: 3px;
+}

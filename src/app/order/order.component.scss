@@ -1,0 +1,31 @@
+@import 'var';
+@import 'extends';
+
+.h1-order{
+    @extend %h1-red;
+}
+p{
+    @extend %p-gray;
+}
+.form-order{
+    text-align: center;
+    input, textarea{
+        width:500px;
+        margin: 15px;
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        color: $dark-gray;
+       @extend %font-15-dark;
+    }
+    .button{
+    background: $deep-red;
+    width: 530px;
+    color: white;
+    border: none;
+    display:inline-block;
+    padding: 15px;
+    font-size: 15px;
+    margin: 15px;
+    }
+}

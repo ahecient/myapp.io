@@ -1,0 +1,11 @@
+@import 'extends';
+@import 'var';
+h1{
+    @extend %h1-red;
+}
+p{
+    @extend %p-gray;
+}
+.wraper-contacts{
+    margin-top: $margin-top-content;
+}

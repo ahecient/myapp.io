@@ -1,0 +1,26 @@
+@import 'extends';
+@import 'var';
+
+h1{
+    @extend %h1-white;
+    margin:0px;
+    padding:20px;
+    background: black;
+}
+table{
+    text-align: center;
+    background: white;
+    font-size: 20px;
+    color: black;
+    width: 700px;
+    .table-header th{
+        background: $deep-red;
+        font-size:20px;
+        color: white;
+        padding: 15px;
+    }
+    .main td{
+        font-size:20px;
+        padding: 15px;
+    }
+}

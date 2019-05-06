@@ -1,0 +1,9 @@
+
+<ng-template ngFor let-p [ngForOf] = "photos" let-i = "index">
+  <div class = "box-{{i+1}}">
+      <img src="{{p.img}}"/>
+      <div class = "text">
+        {{p.about}}
+      </div>
+  </div>
+</ng-template>
