@@ -10,9 +10,20 @@ export class FilterComponent implements OnInit {
   Sex = ["Female", "Male", "Child"];
   Type = ["Theatre", "Artist"];
   Collection = ["Season 2017", "Season 2018", "Season 2019"];
+  MainFilter=[];
   constructor() { }
 
   ngOnInit() {
   }
 
+  onCheckBoxClick(filter:string){
+    if(filter in this.MainFilter){
+      //
+    }
+    else{
+      this.MainFilter.push(filter);
+    }
+    
+    console.log(this.MainFilter);
+  }
 }

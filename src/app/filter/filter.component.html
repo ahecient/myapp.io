@@ -3,8 +3,8 @@
       <div class = "parametrs-headers">
           <h2>Sex</h2>
         </div>
-        <div class = "parametrs" *ngFor = "let item of Sex; let i = index">
-          <input type = "checkbox" name = "sex" [ngModel] = "Sex[i]" id = "s{{i+1}}">
+        <div class = "parametrs" *ngFor = "let item of Sex; let i = index" >
+          <input type = "checkbox" name = {{item}} [ngModel] = "Sex[i]" id = "s{{i+1}}" (click)="onCheckBoxClick(Sex[i])">
           <label for = "s{{i+1}}">{{item}}</label>
         </div>
   </div>
