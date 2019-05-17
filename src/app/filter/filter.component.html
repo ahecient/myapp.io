@@ -13,7 +13,7 @@
           <h2>Type</h2>
         </div>
         <div class = "parametrs" *ngFor = "let item of Type; let i = index">
-          <input type = "checkbox" name = "type" [ngModel] = "Type[i]" id = "t{{i+1}}">
+          <input type = "checkbox" name = "type" [ngModel] = "Type[i]" id = "t{{i+1}}" (click)="onCheckBoxClick(Type[i])">
           <label for = "t{{i+1}}">{{item}}</label>
         </div>
   </div>
@@ -22,8 +22,10 @@
           <h2>Collection</h2>
         </div>
         <div class = "parametrs" *ngFor = "let item of Collection; let i = index">
-          <input type = "checkbox" name = "collection" [ngModel] = "Collection[i]" id = "c{{i+1}}">
+          <input type = "checkbox" name = "collection" [ngModel] = "Collection[i]" id = "c{{i+1}}" (click)="onCheckBoxClick(Collection[i])">
           <label for = "c{{i+1}}">{{item}}</label>
         </div>
   </div>
+
 </form>
+<app-gallery [arrayFromFilter]="MainFilter"></app-gallery>

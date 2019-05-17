@@ -14,7 +14,10 @@
             &:hover{
                 color: $deep-red;
             }
-        }       
+        }  
+        .active{
+            color: $deep-red;
+        }     
     }
 }
 

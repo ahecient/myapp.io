@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LINKS } from '../mock-links';
+import { NAV } from '../mock-nav-links';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { LINKS } from '../mock-links';
 })
 export class HeaderComponent implements OnInit {
 
-  menu = ["Home", "Our Work", "Order", "Price", "Contact"]
+  menu = NAV;
   links = LINKS;
   constructor() { }
 

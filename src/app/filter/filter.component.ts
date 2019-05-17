@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { NgForm} from '@angular/forms';
+import { Input,Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -10,16 +9,17 @@ export class FilterComponent implements OnInit {
   Sex = ["Female", "Male", "Child"];
   Type = ["Theatre", "Artist"];
   Collection = ["Season 2017", "Season 2018", "Season 2019"];
-  MainFilter=[];
+  
+  @Input() MainFilter=["Female", "Male", "Child","Theatre", "Artist","Season 2017", "Season 2018", "Season 2019"];
   constructor() { }
 
   ngOnInit() {
   }
 
   onCheckBoxClick(filter:string){
-    if(filter in this.MainFilter){
-      //
-    }
+    if( this.MainFilter.indexOf(filter, 0)> -1){
+        this.MainFilter.splice(this.MainFilter.indexOf(filter, 0), 1);
+      }
     else{
       this.MainFilter.push(filter);
     }

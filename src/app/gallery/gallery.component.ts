@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Input,Component, OnInit } from '@angular/core';
 import { PHOTOS } from '../mock-photos';
 
 @Component({
@@ -8,11 +8,13 @@ import { PHOTOS } from '../mock-photos';
 })
 export class GalleryComponent implements OnInit {
 
+  @Input() arrayFromFilter=[];
   photos = PHOTOS;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  
+   
 }

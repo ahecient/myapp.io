@@ -10,7 +10,10 @@ app-order, app-price, app-contact{
 }
 
 app-footer{
-    background: $color-layout;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    background: $color-layout,;
     color: $deep-red;
     font-size: 15px;
 }

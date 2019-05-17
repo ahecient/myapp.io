@@ -4,7 +4,7 @@
 
 <form class = "form-order" #myForm = "ngForm" novalidate>
   <input type = "text" name = "name" placeholder= "Name.." [(ngModel)] = "name" required>
-  <input type = "text" name = "phone" placeholder= "Phone.." [(ngModel)] = "phone" required pattern = "[0-9]{10}">
+  <input type = "text" name = "phone" placeholder= "Phone.." [(ngModel)] = "phone" required>
   <input type = "text" name = "email" placeholder= "Email.." [(ngModel)] = "email" required>
   <textarea name = "comment" placeholder="Comment.." [(ngModel)] = "comment" required></textarea>
   <button [disabled]="myForm.invalid" class = "button" (click)="submit(myForm)">Sent</button>

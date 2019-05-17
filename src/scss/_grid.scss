@@ -13,7 +13,7 @@ app-footer{
     justify-content: space-around;
     align-items: end;
 }
-app-filter {
+app-filter form {
     grid-area: sidebar;
 }
 
@@ -23,7 +23,7 @@ app-gallery {
     grid-template-columns:450px 450px 450px;
 }
 
-.wrapper {
+app-filter {
     display: grid;
     grid-template-columns: 200px 450px 450px 450px;
     grid-gap: 5px;
